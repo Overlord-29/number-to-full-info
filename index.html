@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Number to Full Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Number to Full Info</h1>
+    <p class="subtitle">Advanced lookup system v3.1</p>
+
+    <input
+      id="numberInput"
+      type="tel"
+      placeholder="Enter phone number"
+      autocomplete="off"
+    />
+
+    <button id="searchBtn">Search</button>
+
+    <div id="progressBox" class="hidden">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p id="statusText">Initializing request…</p>
+    </div>
+
+    <div id="result" class="hidden">
+      ✔ Data successfully retrieved
+    </div>
+  </div>
+
+  <audio id="audio" src="sound.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
